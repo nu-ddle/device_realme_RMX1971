@@ -37,6 +37,11 @@ PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/mixer_paths_19691.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_19691.xml \
     $(LOCAL_PATH)/audio/audio_platform_info_19691.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_19691.xml \
+    
+# HALS
+SRC_AUDIO_HAL_DIR := vendor/qcom/opensource/audio-hal/primary-hal
+SRC_DISPLAY_HAL_DIR := hardware/qcom/display
+SRC_MEDIA_HAL_DIR := hardware/qcom/media    
 
 # Fingerprint
 PRODUCT_PACKAGES += \
